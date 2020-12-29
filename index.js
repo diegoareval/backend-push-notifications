@@ -23,8 +23,8 @@ app.post('/notifications/subscribe', (req, res) => {
   console.log(subscription)
 
   const payload = JSON.stringify({
-    title: 'Hello!',
-    body: 'It works.',
+    title: 'Tienes un nuevo mensaje!!',
+    body: 'Cuerpo del mensaje.',
   })
 
   webpush.sendNotification(subscription, payload)
